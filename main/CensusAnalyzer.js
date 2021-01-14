@@ -32,7 +32,7 @@ class CensusAnalyzer {                                //Analyzer class
             }
           })
           .on("data", (data) => {
-            if (data.State == "." || data.Population == "." || data.AreaInSqKm == "." || data.DensityPerSqKm == "." ) {
+            if (data.State == '' || data.Population == '' || data.AreaInSqKm == '' || data.DensityPerSqKm == '' ) {
               rejects(new Error("Wrong Delimeter Exception"));  //to check delimeter
             } 
             else {
@@ -83,7 +83,7 @@ class CensusAnalyzer {                                //Analyzer class
         }
       });
   }
-  
+
 }
 
 module.exports = CensusAnalyzer;

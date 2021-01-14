@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1610616602548" clover="3.2.0">
-  <project timestamp="1610616602548" name="All files">
-    <metrics statements="38" coveredstatements="36" conditionals="32" coveredconditionals="30" methods="11" coveredmethods="11" elements="81" coveredelements="77" complexity="0" loc="38" ncloc="38" packages="1" files="1" classes="1"/>
+<coverage generated="1610629757483" clover="3.2.0">
+  <project timestamp="1610629757483" name="All files">
+    <metrics statements="55" coveredstatements="53" conditionals="32" coveredconditionals="30" methods="17" coveredmethods="17" elements="104" coveredelements="100" complexity="0" loc="55" ncloc="55" packages="1" files="3" classes="3"/>
     <file name="CensusAnalyzer.js" path="C:\Users\Manas\Desktop\Indian-State-Census-Analyzer-Problem\main\CensusAnalyzer.js">
       <metrics statements="38" coveredstatements="36" conditionals="32" coveredconditionals="30" methods="11" coveredmethods="11"/>
       <line num="1" count="1" type="stmt"/>
@@ -13,19 +13,19 @@
       <line num="7" count="1" type="stmt"/>
       <line num="14" count="5" type="stmt"/>
       <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="20" count="3" type="stmt"/>
-      <line num="21" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="22" count="1" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
-      <line num="29" count="3" type="cond" truecount="6" falsecount="0"/>
+      <line num="26" count="4" type="stmt"/>
+      <line num="29" count="4" type="cond" truecount="6" falsecount="0"/>
       <line num="30" count="1" type="stmt"/>
       <line num="31" count="1" type="stmt"/>
-      <line num="35" count="87" type="cond" truecount="5" falsecount="1"/>
+      <line num="35" count="116" type="cond" truecount="5" falsecount="1"/>
       <line num="36" count="0" type="stmt"/>
-      <line num="39" count="87" type="stmt"/>
-      <line num="43" count="3" type="stmt"/>
+      <line num="39" count="116" type="stmt"/>
+      <line num="43" count="4" type="stmt"/>
       <line num="52" count="4" type="stmt"/>
       <line num="54" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="55" count="1" type="stmt"/>
@@ -42,6 +42,29 @@
       <line num="77" count="109" type="stmt"/>
       <line num="81" count="1" type="stmt"/>
       <line num="89" count="1" type="stmt"/>
+    </file>
+    <file name="CsvtoJason.js" path="C:\Users\Manas\Desktop\Indian-State-Census-Analyzer-Problem\main\CsvtoJason.js">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+    </file>
+    <file name="sortByStateName.js" path="C:\Users\Manas\Desktop\Indian-State-Census-Analyzer-Problem\main\sortByStateName.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="28" type="stmt"/>
+      <line num="10" count="28" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

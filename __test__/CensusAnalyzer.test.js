@@ -1,5 +1,6 @@
 const {test, expect } = require('@jest/globals');
 const CensusAnalyzer = require('../main/CensusAnalyzer')
+const sortByStateNameFunc = require('../main/sortByStateName')
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -7,7 +8,6 @@ const IndiaStateCensusData = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Ana
 const IndiaStateCensusDataWrongFile = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusData1.csv';
 const IndiaStateCensusDataWrongType = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusDataWrongType.txt';
 const IndiaStateCensusDataWrongHeader = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusDataWrongHeader.csv';
-const IndiaStateCensusDataWrongDelimeter =  'C:\\Users\\Manas\Desktop\\Indian-State-Census-Analyzer-Problem\\main\resources\\IndiaStateCensusDataWrongDelimeter.csv';
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,8 +42,15 @@ describe('India State Census Information Test-Cases', () => {
 
     test('sad testcase-Wrong_delimeter', () => {
         const censusAnalyzer = new CensusAnalyzer()
-        return expect(censusAnalyzer.indiaStateCensusAnalyser(IndiaStateCensusDataWrongDelimeter)).rejects.toThrow("Wrong Delimeter Exception");
+        return expect(censusAnalyzer.indiaStateCensusAnalyser(IndiaStateCensusData)).rejects.toThrow("Wrong Delimeter Exception");
     });
+
+    test('sort by State name testcase', () => {
+        return sortByStateNameFunc(IndiaStateCensusData).then(data => {
+            expect(data[0].State).toBe('Uttar Pradesh');
+            expect(data[28].State).toBe('Sikkim');
+        })
+    })
 });
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
