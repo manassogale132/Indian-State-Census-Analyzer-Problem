@@ -5,7 +5,7 @@ const fs = require("fs");                             //reading from the file sy
 const path = require("path"); 
 let results = [];                                    //empty array
 
-function indiaStateCensusAnalyser(file) {               //function taking the file path
+function indiaStateCensusAnalyser(file){               //function taking the file path
 
   return new Promise((resolve, rejects) => {            //have a promise
    
