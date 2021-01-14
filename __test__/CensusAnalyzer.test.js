@@ -5,9 +5,9 @@ const IndiaStateCensusData = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Ana
 const IndiaStateCensusDataWrongFile = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusData1.csv';
 const IndiaStateCensusDataWrongType = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusDataWrongType.txt';
 const IndiaStateCensusDataWrongHeader = 'C:\\Users\\Manas\\Desktop\\Indian-State-Census-Analyzer-Problem\\main\\resources\\IndiaStateCensusDataWrongHeader.csv';
-const IndiaStateCensusDataWrongDelimiter = 'C:\\Users\\Manas\Desktop\\Indian-State-Census-Analyzer-Problem\\main\r\esources\\IndiaStateCensusDataWrongDelimiter.csv';
+const IndiaStateCensusDataWrongDelimeter =  'C:\\Users\\Manas\Desktop\\Indian-State-Census-Analyzer-Problem\\main\resources\\IndiaStateCensusDataWrongDelimeter.csv';
 
-describe('India State Census Test-Cases', () => {
+describe('India State Census Information Test-Cases', () => {
 
     test('happy testcase-Number_of_records_are_matching', () => {
         const censusAnalyzer = new CensusAnalyzer()
@@ -31,7 +31,7 @@ describe('India State Census Test-Cases', () => {
 
     test('sad testcase-Wrong_delimeter', () => {
         const censusAnalyzer = new CensusAnalyzer()
-        return expect(censusAnalyzer.indiaStateCensusAnalyser(IndiaStateCensusDataWrongDelimiter)).rejects.toThrow("Invalid Delimeter Exception");
+        return expect(censusAnalyzer.indiaStateCensusAnalyser(IndiaStateCensusData)).rejects.toThrow("Wrong Delimeter Exception");
     });
 
 });

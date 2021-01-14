@@ -5,7 +5,7 @@ const fs = require("fs"); //reading from the file system
 const path = require("path");
 let results = []; //empty array
 
-class CensusAnalyzer {
+class CensusAnalyzer {                                //Analyzer class
   constructor() {}
 
   indiaStateCensusAnalyser(file) {                     //function taking the file path
@@ -31,8 +31,8 @@ class CensusAnalyzer {
             }
           })
           .on("data", (data) => {
-            if (data.State == "" || data.Population == "" || data.AreaInSqKm == "" || data.DensityPerSqKm == "" ) {
-              rejects(new Error("Invalid Delimeter Exception"));  //to check delimeter
+            if (data.State == "." || data.Population == "." || data.AreaInSqKm == "." || data.DensityPerSqKm == "." ) {
+              rejects(new Error("Wrong Delimeter Exception"));  //to check delimeter
             } 
             else {
               results.push(data);                      //pushing data to the array
@@ -44,6 +44,8 @@ class CensusAnalyzer {
       }
     });
   }
+
+
 }
 
 module.exports = CensusAnalyzer;
